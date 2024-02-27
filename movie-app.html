@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Movie App</h1>
+    <form action="#">
+        <label for="title">Movie-title</label>
+        <input class="inputs" type="text" name="title" id="title" placeholder="Godzilla" required minlength="2"> <!-- make sure title requires min. 2 letters -->
+        <label for="rating">Rating</label>
+        <input class="inputs" type="number" name="rating" id="rating" placeholder="7" required min="0" max="10"> <!-- make sure reating is in between 0-10 -->
+        <button type="submit" id="subForm">Submit</button> 
+    </form>
+
+    <h2>Movie List with rating:</h2>
+    <ul> <!-- list to append to -->
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
